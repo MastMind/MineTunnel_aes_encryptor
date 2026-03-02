@@ -1,3 +1,9 @@
+[profile.release]
+opt-level = 3        # Maximum optimization level (default for release)
+codegen-units = 1    # Allows for maximum inter-procedure optimization, at the cost of compilation time
+lto = true           # Enables Link Time Optimization
+strip = "symbols"    # Strips debug symbols from the binary to reduce size
+
 [package]
 name = "mine_tunnel_aes_encryptor"
 version = "0.1.0"
